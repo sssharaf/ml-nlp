@@ -10,7 +10,6 @@ def model3(*args, **kwargs):
     model =MyModel3()
     checkpoint = 'https://sharaf-bucket.s3.amazonaws.com/model-3.dat'
     model.load_state_dict(torch.hub.load_state_dict_from_url(checkpoint,map_location=torch.device('cpu'), progress=True))
-    model.to(torch.device('cpu'))
     return model
 
 ############################### Model 3  ############################################
