@@ -3,8 +3,8 @@ import torch
 import torch.nn as nn
 from pytorch_transformers import BertTokenizer, BertConfig,BertForMaskedLM,BertModel,DistilBertTokenizer, DistilBertModel,DistilBertForSequenceClassification
 
-MODEL3_ACTIONS=['noaction' 'restart' 'start' 'stop']
-MODEL3_COMPONENTS=['asc' 'nocomponent' 'processor' 'swap' 'wire']
+MODEL3_ACTIONS=['noaction', 'restart', 'start', 'stop']
+MODEL3_COMPONENTS=['asc' ,'nocomponent', 'processor', 'swap' ,'wire']
 
 def model3(*args, **kwargs):
     model =MyModel3()
